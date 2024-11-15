@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1); /* Changed to more transparent */
+    backdrop-filter: blur(12px); /* Increased blur effect */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Added subtle border */
+    margin: 1rem;
+}
+.container {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Softer shadow effect */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Slightly brighter border */
+}
+
+
+.container::before {
+    transition: all 0.3s ease-in-out;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 20%, rgba(255, 255, 255, 0) 80%);
+}
+
+.container:hover::before {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 20%, rgba(255, 255, 255, 0) 80%);
+}
+
+
+.container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: none;
+}
+
+.container img {
+    border: 4px solid #fff; /* Blue border */
+    transition: box-shadow 0.3s ease; /* Smooth transition for glow effect */
+}
+
+.container img:hover {
+    box-shadow: 0 0 25px #fFF; /* Blue glow on hover */
+}
+
+
+
+
+h1 {
+  opacity: 0.8;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 600;
+     transition: .3s ease;  
+}
+
+h1:hover{
+  opacity: 1;
+}
+
+
+.social-icons {
+
+    display: flex;
+    gap: 30px;
+}
+
+.social-icons svg {
+  opacity: 0.7;
+    width: 25px;
+    height: 25px;
+    fill: white;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.social-icons svg:hover {
+  opacity: 1;
+    transform: scale(1.2);
+    fill: #fa9702; /* Gold color for hover effect */
+}
+
+
+/* Mobile-Friendly Design (Responsive Styles) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Allow container to occupy more width */
+        padding: 25px; /* Reduce padding for small screens */
+        max-width: 350px; /* Slightly smaller max width for smaller devices */
+    }
+
+    .social-icons {
+        gap: 15px; /* Reduce gap between social icons */
+    }
+
+    .social-icons svg {
+        width: 30px; /* Reduce icon size */
+        height: 30px;
+    }
+
+    .container h1 {
+        font-size: 24px; /* Slightly smaller font size for headings */
+    }
+
+    .container p {
+        font-size: 16px; /* Smaller text for smaller screens */
+    }
+        .container img {
+        width: 120px; /* Slightly smaller image size on medium screens */
+        height: 120px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%; /* Make container take even more space */
+        padding: 20px;
+        max-width: 320px; /* Max-width for very small screens */
+    }
+
+    .social-icons svg {
+        width: 25px; /* Further reduce icon size */
+        height: 25px;
+    }
+
+    .container h1 {
+        font-size: 20px; /* Even smaller font size for headings */
+    }
+
+    .container p {
+        font-size: 14px; /* Even smaller text */
+    }
+    @media (max-width: 480px) {
+    .container img {
+        width: 100px; /* Even smaller image size on small screens */
+        height: 100px;
+    }
+}}
+
+
+
