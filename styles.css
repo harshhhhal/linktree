@@ -178,11 +178,27 @@ h1:hover{
     transform: scale(1.05);
 }
 
+.cta-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* Makes it white-ish */
+    transition: filter 0.3s ease;
+}
+
+.cta-button:hover .cta-icon {
+    filter: none; /* Restore original color on hover */
+}
+
 /* Responsive tweak */
 @media (max-width: 480px) {
     .cta-button {
         padding: 10px 20px;
         font-size: 14px;
+    }
+        .cta-icon {
+        width: 18px;
+        height: 18px;
     }
 }
 
