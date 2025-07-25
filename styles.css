@@ -164,20 +164,17 @@ h1:hover{
     padding: 12px 24px;
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
-    border: 2px solid #fa9702;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 30px;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
     backdrop-filter: blur(4px);
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
 }
 
 .cta-button:hover {
-    background-color: #fa9702;
-    color: black;
+    background-color: #fafafa;
+    color: #fa9702;
     transform: scale(1.05);
 }
 
