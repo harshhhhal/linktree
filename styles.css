@@ -179,9 +179,10 @@ h1:hover{
 }
 
 .button-icon {
-    height: 1em;
+    height: 0.95em;
     width: auto;
     vertical-align: middle;
+    margin-bottom: 1px; /* optional tweak for vertical alignment */
 }
 
 /* Responsive tweak */
@@ -191,6 +192,6 @@ h1:hover{
         font-size: 14px;
     }
     .button-icon {
-    height: 1em;
+
     }
 }
