@@ -164,30 +164,26 @@ h1:hover{
     padding: 12px 24px;
     background-color: rgba(255, 255, 255, 0.1);
     color: white;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 2px solid #fa9702;
     border-radius: 30px;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
     backdrop-filter: blur(4px);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .cta-button:hover {
-    background-color: #fafafa;
-    color: #fa9702;
+    background-color: #fa9702;
+    color: black;
     transform: scale(1.05);
 }
 
-.cta-icon {
+.button-icon {
     width: 20px;
     height: 20px;
-    object-fit: contain;
-    filter: brightness(0) invert(1); /* Makes it white-ish */
-    transition: filter 0.3s ease;
-}
-
-.cta-button:hover .cta-icon {
-    filter: none; /* Restore original color on hover */
 }
 
 /* Responsive tweak */
@@ -196,10 +192,8 @@ h1:hover{
         padding: 10px 20px;
         font-size: 14px;
     }
-        .cta-icon {
+    .button-icon {
         width: 18px;
         height: 18px;
     }
 }
-
-
