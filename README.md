@@ -6,8 +6,8 @@
 ---
 
 ## 📁 Files
-- `index.html` — Main page
-- `robots.txt`, `sitemap.xml`, `site.webmanifest` — SEO & PWA
+- `index.html` - Main page
+- `robots.txt`, `sitemap.xml`, `site.webmanifest` - SEO & PWA
 
 ---
 
