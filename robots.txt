@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://harshhhhal.harsx.me/sitemap.xml
+Sitemap: https://harshhhhal.vercel.app/sitemap.xml
